@@ -1,0 +1,25 @@
+{
+  "name": "userlookup",
+  "version": "1.0.0",
+  "description": "GitHub UserLockup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevooronni/github-user-lookup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nevooronni/github-user-lookup/issues"
+  },
+  "homepage": "https://github.com/nevooronni/github-user-lookup#readme",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {}
+}
