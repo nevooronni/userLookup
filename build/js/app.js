@@ -1,10 +1,13 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+exports.apiKey = "d7c82bf02f2aa3b923efbc2aef62cf02bc17432d";
+
+},{}],2:[function(require,module,exports){
 //backend script js
+var apiKey = require('./../.env').apiKey;
+
 exports.Repo = function() {
 
-}
-
-var apiKey = "d7c82bf02f2aa3b923efbc2aef62cf02bc17432d";
+};
 
 exports.Repo.prototype.apiRequest = function(userName) {
 	$.get("https://api.github.com/users/" + userName + "?access_token=" + apiKey).then(function(response) {
@@ -12,7 +15,7 @@ exports.Repo.prototype.apiRequest = function(userName) {
       $("#displayImage").append("<img src=" + response.avatar_url + ">");
       $("#divName").text(response.login);
       $("#divRepo").text(response.public_repos);
-      $("#display").slideToggle();
+      $("#display").show();
     //$("#divRepoName").text();
     //$("#repoLinks").text();  
     }).fail(function(error) {
@@ -32,14 +35,15 @@ exports.Repo.prototype.apiRequest = function(userName) {
 
 
 
-},{}],2:[function(require,module,exports){
+},{"./../.env":1}],3:[function(require,module,exports){
 //custom script js
-var Repo = require('./../js/backend-script.js').Repo;
+var apiKey = require('./../.env').apiKey;
 
-var apiKey = "d7c82bf02f2aa3b923efbc2aef62cf02bc17432d";
+var Repo = require('./../js/backend-script.js').Repo;
 
 $(document).ready(function() {
   //frontend
+  $("#display").hide();
   var newUser = new Repo(); 
   $("#submit").click(function(event) {
     event.preventDefault();
@@ -53,4 +57,6 @@ $(document).ready(function() {
 
 
 
-},{"./../js/backend-script.js":1}]},{},[2]);
+
+
+},{"./../.env":1,"./../js/backend-script.js":2}]},{},[3]);
