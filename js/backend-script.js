@@ -1,8 +1,11 @@
 //backend script js
+exports.Repo = function() {
+
+}
 
 var apiKey = "d7c82bf02f2aa3b923efbc2aef62cf02bc17432d";
 
-function apiRequest(userName) {
+exports.Repo.prototype.apiRequest = function(userName) {
 	$.get("https://api.github.com/users/" + userName + "?access_token=" + apiKey).then(function(response) {
       console.log(JSON.stringify(response));
       $("#displayImage").append("<img src=" + response.avatar_url + ">");
@@ -25,4 +28,5 @@ function apiRequest(userName) {
       console.log(error.responseJSON.message);
     });
 };
+
 
