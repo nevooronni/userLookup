@@ -3,7 +3,7 @@
   <head>
     <!--bower stylesheet-->
     <link rel="stylesheet" href="build/css/vendor.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <!--bower javascript-->
     <script src="build/js/vendor.min.js"></script>
     <!--js scripts-->
@@ -11,16 +11,27 @@
   </script>  
   </head>
   <body>
-    <div class="container">
-      <h1 Class="text-center">USER PROFILE</h1>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div id="logo"></div>
+      <p id="head">GITHUBUSER</p>
+      <p id="nevo">BY NEVOORONNI</p>
+      <img class="img-responsive" src="img/kenya.jpg" alt="kenyan flag" height="40px" width="40px" id="right">
+    </div>
 
+    <!--jumbotron section-->
+    <div class="row jumbotron">
+      <h2 id="center">BUILT WITH FREE IMAGINATION</h2>
+      <h1 id="fitme2">DEVELOPER PORTFOLIOS</h1>
+      <h3 id="knowmore">Githubuserlookup lets you view developer github<br> portfolios. Just enter the develper user name for <br>github below and hit search button to view repos.</h3>
       <!--user name form-->
       <div id="userForm">
         <form id="userFormName">
-          <input type="text" name="name" placeholder="Enter Username" id="username">
+          <input type="text" name="name" placeholder="ENTER USERNAME" id="username">
           <button type="submit" id="submit" class="btn">SEARCH</button>
         </form>
       </div>
+    </div>   
+    <div class="container">
 
       <!--display content-->
       <div id="display">
@@ -32,6 +43,13 @@
         <p id="userRepositoriesN">REPO NAMES & LINKS</p>
         <div id="divRepoName"></div>
       </div>
-    </div>  
+    </div> 
+
+    <!-- Footer-->
+    <div class="nav">
+      <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
+        <div class="navbar-text pull-right"></div>
+      </nav>
+    </div> 
   </body>
 </html>
