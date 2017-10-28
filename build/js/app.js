@@ -26,7 +26,7 @@ exports.Repo.prototype.apiRequest = function(userName) {
     $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response){
     for(var i = 0; i < response.length; i++){
       $("#divRepoName").append("<h4>" + response[i].name + "</h4><p>" + response[i].description + "<a href=" + response[i].html_url + 
-        "><br><h5>view on github</h5></a>" + "</p><br><br>");
+        "><br><h5>view on github</h5></a>" + "</p><hr noshade><br><br>");
     }
     }).fail(function(error) {
       console.log(error.responseJSON.message);
@@ -52,6 +52,9 @@ $(document).ready(function() {
     newUser.apiRequest(userName); 
     //var output = github.getProfile(userName);
     //return output;
+  });
+  $("#refresh").click(function() {
+    location.reload();
   });
 }); 
 

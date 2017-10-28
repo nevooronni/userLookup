@@ -57,7 +57,7 @@
 
 .jumbotron {
   background-image: url("../img/mac.jpeg");
-  height: 650px;
+  height: 659px;
   margin-bottom: 0px;
   border-radius: 0px;
   background-size: cover;
@@ -131,90 +131,254 @@
 #submit:hover {
   opacity: 1;
 }
-/*
 
-
-
-#username {
-  width: 280px;
-  height: 40px;
+#message {
+  width: 101%;
+  background-color: #27272b;
+  margin-bottom: 0px;
 }
 
-#submit {
-  display: block;
-  margin-top: 10px;
-  width: 280px;
-  height: 50px;
-  font-size: 18px;
+#check {
+  position: relative;
+  top: 20px;
+  left: 19%;
+  font-size: 14px;
+  color: #fff;
   font-weight: bold;
 }
 
-#userName {
-  position: absolute;
-  top: 700px;
-  left: 300px;
-  font-size: 29px;
+#check:after {
+  color: grey;
+  font-weight: bold;
+  content: "YOU CAN ALSO VIEW THE REPOS ON GITHUB HERE.";
 }
 
-#divName {
-  position: absolute;
-  top: 745px;
-  left: 300px;
-  font-size: 20px;
-  color: #FF5C62;
-}
-
-#userRepositories {
-  position: absolute;
-  top: 790px;
-  left: 300px;
-  font-size: 29px;
-}
-
-#divRepo{
-  position: absolute;
-  top: 835px;
-  left: 300px;
-  font-size: 20px;
-  color: #FF5C62; 
-}
-
-#userRepositoriesN {
-  position: absolute;
-  top: 395px;
-  left: 680px;
-  font-size: 29px;
-}
-
-#divRepoName {
+#github {
   position: relative;
-  top: 450px;
-  left: 680px;
-  font-size: 20px;
-  color: #FF5C62; 
-}
-
-#linksName {
-  position: absolute;
-  top: 395px;
-  left: 1180px;
-  font-size: 29px;
-}
-
-#repoLinks {
-  position: absolute;
-  top: 450px;
-  left: 1180px;
-  font-size: 20px;
-  color: #FF5C62;
+  top: -18px;
+  left: 65%;
+  width: 126px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #44b2e2;
+  color: #44b2e2;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 #display {
-  display: none;
+  height: 870px;
+  background-image: url("https://d28avw9ny3vgf2.cloudfront.net/application/_img/salesite/pricing/bg2.jpg");
+  padding-top: 65px;
+  width: 101%;
+  padding-bottom: 0px;
+}
+
+#name {
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  color: #fff;
+  margin-top: 0px;
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+  color: grey;
+  margin: 10px 0 15px;
+}
+
+#logo2 {
+  background-image: url("https://d28avw9ny3vgf2.cloudfront.net/application/_img/salesite/common/sprite.png"); 
+  width: 38px;
+  height: 33px;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: 0 -28px;
+  position: absolute;
+  top: 112%;
+  left: 49%;
+}
+
+#image {
+  position: relative;
+  top: 78px;
+  left: 20%;
+}
+
+#details {
+  position: relative;
+  top: -325px;
+  left: 55%;
+}
+
+#userimage {
+  color: #fff;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 42px;
+  display: inline;
+  
+}
+
+#line1 {
+  color: #44b2e2;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  display: inline;
+  position: relative;
+  top: -7px;
+}
+
+#provided {
+  margin-top: 10px;
+  color: grey;
+}
+
+#line2 {
+  color: #44b2e2;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  display: inline;
+  position: relative;
+  top: -7px;
+}
+
+#userdetails {
+  color: #fff;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 42px;
+  display: inline; 
+}
+
+#line3 {
+  color: #44b2e2;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  position: relative;
+  top: 17px;
+}
+
+#nameuser {
+  color: #fff;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  position: relative;
+  top: -27px;
+  left: 12px;
+
+}
+
+#divName {
+  margin-top: -10px;
+  margin-left: 26px;
+  font-size: 24px;
+  color: #44b2e2;
+}
+
+#line4 {
+  color: #44b2e2;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#pository {
+  color: #fff;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  position: relative;
+  top: -43px;
+  left: 12px;
+}
+
+#divRepo {
+  margin-top: -30px;
+  margin-left: 26px;
+  font-size: 24px;
+  color: #44b2e2;
 }
 
 #displayImage {
+  height: 320px;
+  width: 320px;
+  margin-top: 10px;
+}
+
+#display1 {
+  height: auto;
+}
+
+#repos {
+  background-color: #fff;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+}
+
+#refresh {
+  margin-bottom: 25px;
+  background-color: #44b2e2;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  width: 300px;
+  margin-top: 10px;
   position: relative;
-  top: 380px;
-  left: 100px;
-}*/
+  left: 40%;
+  opacity: 0.80;
+}
+
+#refresh:hover {
+  opacity: 1;
+}
+
+#userRepositoriesN {
+  font-size: 30px;
+  color: grey;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+#instructions {
+  font-size: 15px;
+  color: grey;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#divRepoName {
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 2px;
+  border-color: grey;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+#services {
+  color: #44b2e2;
+  font-weight: bold;
+}
+
+#line6 {
+  color: grey;
+  font-family: proxima_novalight,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+  font-size: 30px;
+}
+
+.social a {
+  color: grey;
+  margin-left: 6px;
+  font-size: 18px;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+.nav {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+

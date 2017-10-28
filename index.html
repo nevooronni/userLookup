@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!--bower javascript-->
     <script src="build/js/vendor.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <!--js scripts-->
     <script type="text/javascript" src="build/js/app.js"></script>
   </script>  
@@ -30,26 +32,56 @@
           <button type="submit" id="submit" class="btn">SEARCH</button>
         </form>
       </div>
-    </div>   
-    <div class="container">
-
-      <!--display content-->
-      <div id="display">
-        <div id="displayImage"></div>
-        <p id="userName">USERNAME</p>
-        <div id="divName"></div>
-        <p id="userRepositories">REPOSITORIES</p>
-        <div id="divRepo"></div>
-        <p id="userRepositoriesN">REPO NAMES & LINKS</p>
-        <div id="divRepoName"></div>
-      </div>
+    </div>
+    <div id="message">
+      <p id="check">CHECK OUT THE USER SPECIFIC REPOS BELOW.</p>
+      <a href="https://github.com/"><button class="btn" id="github">GITHUB</button></a>
     </div> 
+    <div id="display">
+      <h1 id="name">USER</h1>
+      <p id="about">DETAILS ABOUT THE USER ON GITHUB</p>
+      <div id="logo2"></div>
+      <div id="image">
+        <h2 id="line1">|</h2>
+        <h1 id="userimage">USER IMAGE</h1>
+        <p id="provided">USER IMAGE AS PROVIDED BY GITHUB</p>
+        <div id="displayImage"></div>
+      </div>
+      <div id="details">
+        <h2 id="line2">|</h2>
+        <h1 id="userdetails">USER DETAILS</h1>
+        <h2 id="line3">|</h2>
+        <h3 id="nameuser">USERNAME</h3>
+        <div id="divName"></div>
+        <h2 id="line4">|</h2>
+        <h3 id="pository">REPOSITORIES</h3>
+        <div id="divRepo"></div>
+      </div>
+
+      <!--repos section-->
+      <div id="repos">
+        <h1 id="userRepositoriesN">REPO NAMES & LINKS</h1>
+        <div id="logo3"></div>
+        <p id="instructions">YOU HAVE THE REPOS LISTED IN ORDER OF NAME OF REPO, DESCRIPTION AND GITHUB LINK.</p>
+        <button class="btn" id="refresh">REFRESH</button>
+        <div id="divRepoName"></div>
+        <div id="space"></div>
+      </div> 
+    </div>
 
     <!-- Footer-->
-    <div class="nav">
-      <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
-        <div class="navbar-text pull-right"></div>
-      </nav>
-    </div> 
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
+      <div class="navbar-text pull-left" id="services">SERVICES</div>
+      <span id="line6">|</span>
+      <span class="social">
+        <a class="icon icon-facebook facebookIcon" target="_blank" href="https://www.facebook.com/github"></a>
+        <a target="_blank" href="https://twitter.com/github" class="icon icon-twitter"></a>
+        <a target="_blank" href="https://instagram.com/github/" class="icon icon-instagram"></a>
+        <a target="_blank" href="https://plus.google.com/103476120225460848054/posts" class="icon icon-googleplus"></a>
+        <a target="_blank" href="http://www.pinterest.com/github/" class="icon icon-pinterest"></a>
+        <a target="_blank" href="http://flickr.com/github" class="icon icon-flickr"></a>
+        <a target="_blank" href="https://www.linkedin.com/company/github" class="icon icon-linkedin"></a>
+      </span>
+    </nav> 
   </body>
 </html>

@@ -15,6 +15,9 @@ $(document).ready(function() {
     //var output = github.getProfile(userName);
     //return output;
   });
+  $("#refresh").click(function() {
+    location.reload();
+  });
 }); 
 
 
